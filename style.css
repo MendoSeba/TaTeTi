@@ -1,0 +1,63 @@
+:root{
+    --color-principal:black
+}
+body{
+    user-select: none;
+    background-color: gray;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-principal);
+}
+#contenedorGrilla {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-content: center;
+}
+.cuadrado {
+    color: black;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    font-weight: bold;
+}
+.medio{
+border-left: 10px solid;
+border-right: 10px solid;
+}
+.arriba{
+border-bottom: 10px solid;
+}
+.abajo{
+    border-top: 10px solid;
+}
+.ganador{
+    background-color: red;
+    
+}
+dialog{
+    text-align: center;
+    min-width: 50vw;
+    background-color: rgba(240, 248, 255, 0.23);
+    padding: 5rem;
+    border: unset;
+}
+
+dialog::backdrop{
+    backdrop-filter: blur(3px);
+}
+
+dialog h2{
+    font-family: var(--font-family);
+    font-size: xx-large;
+}
+
+dialog button{
+    font-size: larger;
+    padding: 1rem;
+}
